@@ -1,0 +1,380 @@
+<div class="column-layout group">
+  <igx-input-group type="search" class="user-input_2">
+    <igx-prefix>
+      <igx-icon class="icon">
+        search
+      </igx-icon>
+    </igx-prefix>
+    <igx-suffix>
+      <igx-icon class="icon">
+        clear
+      </igx-icon>
+    </igx-suffix>
+    <input type="text" placeholder="Search" igxInput />
+  </igx-input-group>
+  <div class="row-layout group_1">
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" igxInput />
+    </igx-input-group>
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" igxInput />
+      <label igxLabel>Just Label</label>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group_1">
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" placeholder="Just Placeholder" igxInput />
+    </igx-input-group>
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" placeholder="Placeholder" igxInput [(ngModel)]="value" />
+      <label igxLabel>Label</label>
+      <igx-hint>sample hint text</igx-hint>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group_1">
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="number" placeholder="Placholder" igxInput />
+      <label igxLabel>Duration</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="number" placeholder="Placholder" igxInput [(ngModel)]="value1" />
+      <label igxLabel>Duration</label>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group_1">
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          email
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="email" placeholder="Placeholder" igxInput />
+      <label igxLabel>Email address</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          lock
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="password" placeholder="Placeholder" igxInput [(ngModel)]="value2" />
+      <label igxLabel>Password</label>
+    </igx-input-group>
+  </div>
+  <igx-input-group type="border" class="user-input_2">
+    <igx-prefix>
+      <igx-icon class="icon">
+        phone
+      </igx-icon>
+    </igx-prefix>
+    <igx-suffix>
+      <igx-icon class="icon">
+        clear
+      </igx-icon>
+    </igx-suffix>
+    <input type="tel" placeholder="Placeholder" igxInput [(ngModel)]="value3" />
+    <label igxLabel>Phone</label>
+  </igx-input-group>
+  <div class="row-layout group_1">
+    <igx-input-group placeholder="Placeholder" type="border" class="user-input">
+      <label igxLabel for="inputField">Date</label>
+      <input name="inputField" [required]="false" [disabled]="false" placeholder="Placeholder" igxInput igxDateTimeEditor="yyyy/MM/dd" displayFormat="shortDate" [spinLoop]="true" />
+    </igx-input-group>
+    <igx-date-picker type="border" mode="dialog" class="date-picker">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
+  </div>
+  <igx-input-group type="border" class="user-input_2">
+    <label igxLabel>Label/Placeholder</label>
+    <textarea placeholder="Text Area Content" igxInput></textarea>
+  </igx-input-group>
+  <div class="row-layout group_1">
+    <igx-select type="border" placeholder="Placeholder" class="user-input">
+      <igx-select-item [isHeader]="true">
+        Option
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <label igxLabel>Select</label>
+    </igx-select>
+    <igx-select type="border" placeholder="Placeholder" [(ngModel)]="value4" class="user-input">
+      <igx-select-item [isHeader]="true">
+        Option
+      </igx-select-item>
+      <igx-select-item value="1">
+        Option
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <label igxLabel>Select</label>
+    </igx-select>
+  </div>
+  <igx-simple-combo type="border" [data]="financialBoxOfficeRevenue" placeholder="Placeholder" displayKey="Franchise" class="user-input_2">
+    <label igxLabel>Combo</label>
+  </igx-simple-combo>
+</div>
+<div class="column-layout group">
+  <igx-input-group type="box" class="user-input_2">
+    <igx-prefix>
+      <igx-icon class="icon">
+        search
+      </igx-icon>
+    </igx-prefix>
+    <igx-suffix>
+      <igx-icon class="icon">
+        clear
+      </igx-icon>
+    </igx-suffix>
+    <input type="text" placeholder="Search" igxInput />
+  </igx-input-group>
+  <div class="row-layout group_1">
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" igxInput />
+    </igx-input-group>
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" igxInput />
+      <label igxLabel>Just Label</label>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group_1">
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" placeholder="Just Placeholder" igxInput />
+    </igx-input-group>
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" placeholder="Placeholder" igxInput [(ngModel)]="value" />
+      <label igxLabel>Label</label>
+      <igx-hint>sample hint text</igx-hint>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group_1">
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="number" placeholder="Placholder" igxInput />
+      <label igxLabel>Duration</label>
+    </igx-input-group>
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="number" placeholder="Placholder" igxInput [(ngModel)]="value1" />
+      <label igxLabel>Duration</label>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group_1">
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          email
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="email" placeholder="Placeholder" igxInput />
+      <label igxLabel>Email address</label>
+    </igx-input-group>
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          lock
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="password" placeholder="Placeholder" igxInput [(ngModel)]="value2" />
+      <label igxLabel>Password</label>
+    </igx-input-group>
+  </div>
+  <igx-input-group type="box" class="user-input_2">
+    <igx-prefix>
+      <igx-icon class="icon">
+        phone
+      </igx-icon>
+    </igx-prefix>
+    <igx-suffix>
+      <igx-icon class="icon">
+        clear
+      </igx-icon>
+    </igx-suffix>
+    <input type="tel" placeholder="Placeholder" igxInput [(ngModel)]="value3" />
+    <label igxLabel>Phone</label>
+  </igx-input-group>
+  <div class="row-layout group_1">
+    <igx-input-group placeholder="Placeholder" type="box" class="user-input">
+      <label igxLabel for="inputField">Date</label>
+      <input name="inputField" [required]="false" [disabled]="false" placeholder="Placeholder" igxInput igxDateTimeEditor="yyyy/MM/dd" displayFormat="shortDate" [spinLoop]="true" />
+    </igx-input-group>
+    <igx-date-picker type="box" class="date-picker">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
+  </div>
+  <igx-input-group type="box" class="user-input_2">
+    <label igxLabel>Label/Placeholder</label>
+    <textarea placeholder="Text Area Content" igxInput></textarea>
+  </igx-input-group>
+  <div class="row-layout group_1">
+    <igx-select type="box" placeholder="Placeholder" class="user-input">
+      <igx-select-item [isHeader]="true">
+        Option
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <label igxLabel>Select</label>
+    </igx-select>
+    <igx-select type="box" placeholder="Placeholder" [(ngModel)]="value4" class="user-input">
+      <igx-select-item [isHeader]="true">
+        Option
+      </igx-select-item>
+      <igx-select-item value="1">
+        Option
+      </igx-select-item>
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <label igxLabel>Select</label>
+    </igx-select>
+  </div>
+  <igx-simple-combo [data]="financialBoxOfficeRevenue" placeholder="Placeholder" displayKey="Franchise" class="user-input_2">
+    <label igxLabel>Combo</label>
+  </igx-simple-combo>
+</div>
