@@ -3,12 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { IgxRadioComponent, IgxRadioGroupDirective } from '@infragistics/igniteui-angular';
 
 @Component({
-  selector: 'app-master-view1',
+  selector: 'app-radio-group',
   standalone: true,
   imports: [IgxRadioGroupDirective, IgxRadioComponent, FormsModule],
-  templateUrl: './master-view1.component.html',
-  styleUrls: ['./master-view1.component.scss']
+  templateUrl: './radio-group.component.html',
+  styleUrls: ['./radio-group.component.scss']
 })
-export class MasterView1Component {
+export class RadioGroupComponent {
   public value: string = '1';
 }
