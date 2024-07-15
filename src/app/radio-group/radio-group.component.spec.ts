@@ -3,22 +3,22 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { IgxRadioComponent, IgxRadioGroupDirective } from '@infragistics/igniteui-angular';
-import { MasterView1Component } from './master-view1.component';
+import { RadioGroupComponent } from './radio-group.component';
 
-describe('MasterView1Component', () => {
-  let component: MasterView1Component;
-  let fixture: ComponentFixture<MasterView1Component>;
+describe('RadioGroupComponent', () => {
+  let component: RadioGroupComponent;
+  let fixture: ComponentFixture<RadioGroupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MasterView1Component ],
+      declarations: [ RadioGroupComponent ],
       imports: [ NoopAnimationsModule, FormsModule, IgxRadioComponent, IgxRadioGroupDirective ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MasterView1Component);
+    fixture = TestBed.createComponent(RadioGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
