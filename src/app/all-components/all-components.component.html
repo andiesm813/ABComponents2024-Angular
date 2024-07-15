@@ -1,0 +1,774 @@
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <igx-tabs [disableAnimation]="true" class="tabs">
+      <igx-tab-item [selected]="true" class="tab-item">
+        <igx-tab-header>
+          <igx-icon igxTabHeaderIcon>
+            info
+          </igx-icon>
+          <span igxTabHeaderLabel>Expanders and Lists</span>
+        </igx-tab-header>
+        <igx-tab-content class="column-layout tab-item-content">
+          <igx-accordion class="accordion">
+            <igx-expansion-panel>
+              <igx-expansion-panel-body>
+                <p class="ig-typography__body-2 text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+              </igx-expansion-panel-body>
+              <igx-expansion-panel-header>
+                <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+              </igx-expansion-panel-header>
+            </igx-expansion-panel>
+            <igx-expansion-panel>
+              <igx-expansion-panel-body>
+                <p class="ig-typography__body-2 text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+              </igx-expansion-panel-body>
+              <igx-expansion-panel-header>
+                <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+              </igx-expansion-panel-header>
+            </igx-expansion-panel>
+            <igx-expansion-panel>
+              <igx-expansion-panel-body>
+                <p class="ig-typography__body-2 text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+              </igx-expansion-panel-body>
+              <igx-expansion-panel-header>
+                <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+              </igx-expansion-panel-header>
+            </igx-expansion-panel>
+          </igx-accordion>
+          <igx-list class="list">
+            <igx-list-item [isHeader]="true">Header</igx-list-item>
+            <igx-list-item>
+              <span igxListLineTitle>Single Line Item Default</span>
+              <span igxListAction>
+                <igx-icon class="icon">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item>
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/7e86e8b8b495deb8eefcdd3556151a40532211e1.png" shape="circle" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Avatar + Title</span>
+            </igx-list-item>
+            <igx-list-item>
+              <span igxListLineSubTitle>Single Line</span>
+            </igx-list-item>
+            <igx-list-item>
+              <span igxListLineTitle>Default with Subtitle</span>
+              <span igxListLineSubTitle>Subtitle...</span>
+              <span igxListAction>
+                <igx-icon class="icon">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item>
+              <span igxListThumbnail>
+                <igx-avatar shape="circle">
+                  <igx-icon>
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLineTitle>Default with Subtitle and Avatar</span>
+              <span igxListLineSubTitle>Subtitle...</span>
+              <span igxListAction>
+                <igx-icon class="icon">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item>
+              <span igxListThumbnail>
+                <igx-avatar src="/assets/d4c387693b4db8c8354a14897762a46dcf820844.png" shape="circle" class="avatar"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Image Avatar</span>
+              <span igxListLineSubTitle>Subtitle...</span>
+              <span igxListAction>
+                <igx-icon class="icon">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item>
+              <span igxListThumbnail>
+                <igx-avatar initials="AB" shape="circle"></igx-avatar>
+              </span>
+              <span igxListLineTitle>Initials Avatar</span>
+              <span igxListLineSubTitle>Subtitle...</span>
+              <span igxListAction>
+                <igx-icon class="icon">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+          </igx-list>
+        </igx-tab-content>
+      </igx-tab-item>
+      <igx-tab-item class="tab-item">
+        <igx-tab-header>
+          <igx-icon igxTabHeaderIcon>
+            info
+          </igx-icon>
+          <span igxTabHeaderLabel>Tree &amp; Sliders</span>
+        </igx-tab-header>
+        <igx-tab-content class="column-layout tab-item-content_1">
+          <igx-tree class="tree">
+            <igx-tree-node>
+              <igx-tree-node>
+                Figma
+              </igx-tree-node>
+              <igx-tree-node>
+                Adobe XD
+              </igx-tree-node>
+              <igx-tree-node>
+                Sketch
+              </igx-tree-node>
+              Design
+            </igx-tree-node>
+            <igx-tree-node>
+              <igx-tree-node>
+                Angular
+              </igx-tree-node>
+              <igx-tree-node>
+                Blazor
+              </igx-tree-node>
+              <igx-tree-node [disabled]="true">
+                Web components
+              </igx-tree-node>
+              Development
+            </igx-tree-node>
+          </igx-tree>
+          <div class="column-layout group_2">
+            <igx-slider [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" [(ngModel)]="value" class="slider"></igx-slider>
+            <igx-slider type="range" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" [(ngModel)]="value1" class="slider"></igx-slider>
+            <igx-slider [continuous]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" [secondaryTickLabels]="false" [showTicks]="true" [(ngModel)]="value" class="slider"></igx-slider>
+            <igx-slider [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" [(ngModel)]="value2" class="slider"></igx-slider>
+            <igx-slider [disabled]="true" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" [(ngModel)]="value" class="slider"></igx-slider>
+          </div>
+        </igx-tab-content>
+      </igx-tab-item>
+      <igx-tab-item class="tab-item">
+        <igx-tab-header>
+          <igx-icon igxTabHeaderIcon>
+            info
+          </igx-icon>
+          <span igxTabHeaderLabel>Stepper</span>
+        </igx-tab-header>
+        <igx-tab-content class="row-layout tab-item-content_1">
+          <igx-stepper titlePosition="bottom" verticalAnimationType="none" horizontalAnimationType="none" #stepper class="stepper">
+            <igx-step [isValid]="false">
+              <div igxStepContent class="column-layout step-content">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+                </p>
+                <div class="row-layout group_3">
+                  <button igxButton="contained" igxRipple (click)="stepper.next()" class="button">
+                    Next
+                  </button>
+                </div>
+              </div>
+              <p igxStepTitle>Address</p>
+            </igx-step>
+            <igx-step [isValid]="false">
+              <div igxStepContent class="column-layout step-content">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+                </p>
+                <div class="row-layout group_3">
+                  <button igxButton="contained" igxRipple (click)="stepper.prev()" class="button">
+                    Prev
+                  </button>
+                  <button igxButton="contained" igxRipple (click)="stepper.next()" class="button">
+                    Next
+                  </button>
+                </div>
+              </div>
+              <p igxStepTitle>Item</p>
+            </igx-step>
+            <igx-step [optional]="true">
+              <div igxStepContent class="column-layout step-content">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+                </p>
+                <div class="row-layout group_3">
+                  <button igxButton="contained" igxRipple (click)="stepper.prev()" class="button">
+                    Prev
+                  </button>
+                  <button igxButton="contained" igxRipple (click)="stepper.reset()" class="button">
+                    Reset
+                  </button>
+                </div>
+              </div>
+              <p igxStepTitle>Wrap</p>
+              <p igxStepSubTitle>(Optional)</p>
+            </igx-step>
+          </igx-stepper>
+        </igx-tab-content>
+      </igx-tab-item>
+      <igx-tab-item class="tab-item">
+        <igx-tab-header>
+          <igx-icon igxTabHeaderIcon>
+            info
+          </igx-icon>
+          <span igxTabHeaderLabel>Cards</span>
+        </igx-tab-header>
+        <igx-tab-content class="column-layout tab-item-content_2">
+          <igx-card [horizontal]="true" class="card">
+            <div class="group_4">
+              <igx-card-header>
+                <div igxCardThumbnail>
+                  <igx-avatar shape="circle">
+                    <igx-icon>
+                      person
+                    </igx-icon>
+                  </igx-avatar>
+                </div>
+                <h3 igxCardHeaderTitle>
+                  Title goes here...
+                </h3>
+                <h5 igxCardHeaderSubtitle>
+                  Subtitle goes here...
+                </h5>
+              </igx-card-header>
+              <igx-card-content class="body-content">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+              </igx-card-content>
+            </div>
+            <igx-card-media width="96px" class="media-content">
+              <img src="/assets/SketchParser.png" class="image" />
+            </igx-card-media>
+          </igx-card>
+          <igx-card class="card">
+            <igx-card-header>
+              <div igxCardThumbnail>
+                <igx-avatar shape="circle">
+                  <igx-icon>
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </div>
+              <h3 igxCardHeaderTitle>
+                Title goes here...
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Subtitle goes here...
+              </h5>
+            </igx-card-header>
+            <igx-card-media height="200px" class="media-content_1">
+              <img src="/assets/SketchParser.png" class="image" />
+            </igx-card-media>
+            <igx-card-actions class="actions-content">
+              <ng-container igxStart>
+                <button igxButton="flat" igxRipple class="button_1">
+                  Button
+                </button>
+              </ng-container>
+              <ng-container igxEnd>
+                <button igxRipple igxIconButton="flat">
+                  <igx-icon>
+                    favorite
+                  </igx-icon>
+                </button>
+                <button igxRipple igxIconButton="flat">
+                  <igx-icon>
+                    bookmark
+                  </igx-icon>
+                </button>
+                <button igxRipple igxIconButton="flat">
+                  <igx-icon>
+                    share
+                  </igx-icon>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card [horizontal]="true" class="card">
+            <div class="group_5">
+              <div class="row-layout">
+                <igx-card-header>
+                  <div igxCardThumbnail>
+                    <igx-card-media width="64px" height="64px" class="media-content_2">
+                      <img src="/assets/SketchParser.png" />
+                    </igx-card-media>
+                  </div>
+                  <h3 igxCardHeaderTitle>
+                    Title goes here...
+                  </h3>
+                  <h5 igxCardHeaderSubtitle>
+                    Subtitle goes here...
+                  </h5>
+                </igx-card-header>
+              </div>
+              <igx-card-content class="body-content">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+              </igx-card-content>
+            </div>
+            <igx-divider [vertical]="true"></igx-divider>
+            <igx-card-actions [vertical]="true" class="igx-card-actions--justify actions-content_1">
+              <ng-container igxEnd>
+                <button igxRipple igxIconButton="flat">
+                  <igx-icon>
+                    favorite
+                  </igx-icon>
+                </button>
+                <button igxRipple igxIconButton="flat">
+                  <igx-icon>
+                    bookmark
+                  </igx-icon>
+                </button>
+                <button igxRipple igxIconButton="flat">
+                  <igx-icon>
+                    share
+                  </igx-icon>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+        </igx-tab-content>
+      </igx-tab-item>
+      <igx-tab-item [disabled]="true" class="tab-item">
+        <igx-tab-header>
+          <igx-icon igxTabHeaderIcon>
+            info
+          </igx-icon>
+          <span igxTabHeaderLabel>Disabled</span>
+        </igx-tab-header>
+        <igx-tab-content class="row-layout tab-item-content_1"></igx-tab-content>
+      </igx-tab-item>
+    </igx-tabs>
+  </div>
+  <div class="column-layout group_6">
+    <igx-stepper orientation="vertical" titlePosition="bottom" verticalAnimationType="none" horizontalAnimationType="none" #stepper1 class="stepper">
+      <igx-step [isValid]="false">
+        <div igxStepContent class="column-layout step-content_1">
+          <igx-input-group type="border" class="user-input">
+            <igx-prefix>
+              <igx-icon class="icon">
+                person
+              </igx-icon>
+            </igx-prefix>
+            <igx-suffix>
+              <igx-icon class="icon">
+                clear
+              </igx-icon>
+            </igx-suffix>
+            <input type="text" placeholder="Placholder" igxInput />
+            <label igxLabel>Label</label>
+            <igx-hint>sample hint text</igx-hint>
+          </igx-input-group>
+          <igx-input-group type="border" class="user-input">
+            <igx-prefix>
+              <igx-icon class="icon">
+                person
+              </igx-icon>
+            </igx-prefix>
+            <igx-suffix>
+              <igx-icon class="icon">
+                clear
+              </igx-icon>
+            </igx-suffix>
+            <input type="text" placeholder="Placholder" igxInput />
+            <label igxLabel>Label</label>
+            <igx-hint>sample hint text</igx-hint>
+          </igx-input-group>
+          <igx-input-group type="border" class="user-input">
+            <igx-prefix>
+              <igx-icon class="icon">
+                person
+              </igx-icon>
+            </igx-prefix>
+            <igx-suffix>
+              <igx-icon class="icon">
+                clear
+              </igx-icon>
+            </igx-suffix>
+            <input type="text" placeholder="Placholder" igxInput />
+            <label igxLabel>Label</label>
+            <igx-hint>sample hint text</igx-hint>
+          </igx-input-group>
+          <div class="row-layout group_3">
+            <button igxButton="contained" igxRipple (click)="stepper1.next()" class="button">
+              Next
+            </button>
+          </div>
+        </div>
+        <p igxStepTitle>Address</p>
+      </igx-step>
+      <igx-step [isValid]="false">
+        <div igxStepContent class="column-layout step-content">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+          </p>
+          <div class="row-layout group_3">
+            <button igxButton="contained" igxRipple (click)="stepper1.prev()" class="button">
+              Prev
+            </button>
+            <button igxButton="contained" igxRipple (click)="stepper1.next()" class="button">
+              Next
+            </button>
+          </div>
+        </div>
+        <p igxStepTitle>Item</p>
+      </igx-step>
+      <igx-step [optional]="true">
+        <div igxStepContent class="column-layout step-content">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+          </p>
+          <div class="row-layout group_3">
+            <button igxButton="contained" igxRipple (click)="stepper1.prev()" class="button">
+              Prev
+            </button>
+            <button igxButton="contained" igxRipple (click)="stepper1.reset()" class="button">
+              Reset
+            </button>
+          </div>
+        </div>
+        <p igxStepTitle>Wrap</p>
+        <p igxStepSubTitle>(Optional)</p>
+      </igx-step>
+    </igx-stepper>
+  </div>
+  <div class="column-layout group_7">
+    <div class="row-layout group_8">
+      <button igxButton="contained" igxRipple [igxToggleAction]="dialog" class="button_1">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>Open Dialog</span>
+      </button>
+      <button [disabled]="true" igxButton="contained" igxRipple class="button_1">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>Button</span>
+      </button>
+      <button igxButton="outlined" igxRipple [igxToggleAction]="banner" class="button_1">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>Open Banner</span>
+      </button>
+      <button igxButton="outlined" [disabled]="true" igxRipple class="button_1">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>Button</span>
+      </button>
+      <button igxButton="flat" igxRipple [igxToggleAction]="snackbar" class="button_1">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>Open Snackbar</span>
+      </button>
+      <button igxButton="flat" [disabled]="true" igxRipple class="button_1">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>Button</span>
+      </button>
+      <button igxRipple igxIconButton="flat">
+        <igx-icon>
+          email
+        </igx-icon>
+      </button>
+      <button igxButton="fab" igxRipple class="user-input_2">
+        <igx-icon>
+          add
+        </igx-icon>
+      </button>
+      <button igxButton="fab" igxRipple class="user-input_2">
+        <igx-icon>
+          add
+        </igx-icon>
+        <span>FAB</span>
+      </button>
+    </div>
+    <igx-buttongroup class="user-input">
+      <button igxButton igxRipple>
+        Button
+      </button>
+      <button igxButton igxRipple>
+        Button
+      </button>
+      <button igxButton igxRipple>
+        Button
+      </button>
+    </igx-buttongroup>
+    <div class="row-layout group_9">
+      <igx-icon class="icon_1">
+        mail
+      </igx-icon>
+      <igx-icon class="icon">
+        mail
+      </igx-icon>
+      <igx-icon class="icon_2">
+        mail
+      </igx-icon>
+      <igx-icon class="icon_3">
+        mail
+      </igx-icon>
+      <igx-badge value="Badge" class="badge"></igx-badge>
+      <igx-badge value="1" class="badge"></igx-badge>
+      <igx-badge value="10" class="badge"></igx-badge>
+      <igx-badge value="1000" class="badge"></igx-badge>
+      <igx-badge icon="mail" class="badge"></igx-badge>
+    </div>
+    <div class="row-layout group_2">
+      <div class="column-layout group_10">
+        <igx-checkbox labelPosition="after" class="user-input_2">
+          Label
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input_2">
+          Label
+        </igx-checkbox>
+        <igx-checkbox labelPosition="after" class="user-input_2">
+          Label
+        </igx-checkbox>
+      </div>
+      <igx-radio-group alignment="vertical" [(ngModel)]="value3" class="user-input_2">
+        <igx-radio value="1" class="radio">
+          Label
+        </igx-radio>
+        <igx-radio value="2" class="radio">
+          Label
+        </igx-radio>
+        <igx-radio value="3" class="radio">
+          Label
+        </igx-radio>
+      </igx-radio-group>
+      <div class="column-layout group_11">
+        <igx-radio-group [(ngModel)]="value3" class="user-input_2">
+          <igx-radio value="1" class="radio">
+            Label
+          </igx-radio>
+          <igx-radio value="2" class="radio">
+            Label
+          </igx-radio>
+          <igx-radio value="3" class="radio">
+            Label
+          </igx-radio>
+        </igx-radio-group>
+        <div class="row-layout group_12">
+          <igx-switch class="user-input_2">
+            Label
+          </igx-switch>
+          <igx-switch [disabled]="true" class="user-input_2">
+            Label
+          </igx-switch>
+          <igx-switch labelPosition="before" [(ngModel)]="checked" class="user-input_2">
+            Label
+          </igx-switch>
+          <igx-switch labelPosition="before" [disabled]="true" [(ngModel)]="checked" class="user-input_2">
+            Label
+          </igx-switch>
+        </div>
+      </div>
+    </div>
+    <div class="row-layout group_2">
+      <igc-rating label="Label" size="large" [(ngModel)]="value4" class="user-input_2"></igc-rating>
+      <igc-rating label="Label" max="3" size="medium" [(ngModel)]="value5" class="user-input_2"></igc-rating>
+      <igc-rating label="Label" size="small" readonly="true" hover-preview="true" disabled="true" [(ngModel)]="value6" class="user-input_2"></igc-rating>
+    </div>
+    <div class="row-layout group_13">
+      <igx-avatar size="large" shape="circle">
+        <igx-icon>
+          people
+        </igx-icon>
+      </igx-avatar>
+      <igx-avatar size="medium" shape="circle">
+        <igx-icon>
+          people
+        </igx-icon>
+      </igx-avatar>
+      <igx-avatar shape="circle">
+        <igx-icon>
+          people
+        </igx-icon>
+      </igx-avatar>
+      <igx-avatar initials="AB" shape="rounded" size="large"></igx-avatar>
+      <igx-avatar initials="AB" shape="rounded" size="medium"></igx-avatar>
+      <igx-avatar initials="AB" shape="rounded"></igx-avatar>
+      <igx-avatar src="/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" size="large" class="avatar"></igx-avatar>
+      <igx-avatar src="/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" size="medium" class="avatar"></igx-avatar>
+      <igx-avatar src="/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" shape="rounded" class="avatar"></igx-avatar>
+    </div>
+  </div>
+  <div class="column-layout group_14">
+    <igx-input-group type="border" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" placeholder="Placholder" igxInput />
+      <label igxLabel>Label</label>
+      <igx-hint>sample hint text</igx-hint>
+    </igx-input-group>
+    <igx-date-picker type="border" mode="dialog" class="date-picker">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
+    <igx-input-group type="border" class="user-input">
+      <label igxLabel>Label/Placeholder</label>
+      <textarea placeholder="Text Area Content" igxInput></textarea>
+    </igx-input-group>
+    <igx-select type="border" placeholder="Placeholder" class="user-input">
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <label igxLabel>Select</label>
+    </igx-select>
+    <igx-simple-combo type="border" [data]="financialBoxOfficeRevenue" placeholder="Placeholder" displayKey="Franchise" class="user-input">
+      <label igxLabel>Combo</label>
+    </igx-simple-combo>
+    <igx-input-group type="box" class="user-input">
+      <igx-prefix>
+        <igx-icon class="icon">
+          person
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      <input type="text" placeholder="Placholder" igxInput />
+      <label igxLabel>Label</label>
+      <igx-hint>sample hint text</igx-hint>
+    </igx-input-group>
+    <igx-date-picker type="box" mode="dialog" class="date-picker">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
+    <igx-input-group type="box" class="user-input">
+      <label igxLabel>Label/Placeholder</label>
+      <textarea placeholder="Text Area Content" igxInput></textarea>
+    </igx-input-group>
+    <igx-select type="box" placeholder="Placeholder" class="user-input">
+      <igx-select-item value="Option">
+        Option
+      </igx-select-item>
+      <label igxLabel>Select</label>
+    </igx-select>
+    <igx-simple-combo [data]="financialBoxOfficeRevenue" placeholder="Placeholder" displayKey="Franchise" class="user-input">
+      <label igxLabel>Combo</label>
+    </igx-simple-combo>
+  </div>
+  <div class="column-layout group_15">
+    <igx-calendar [hasHeader]="true" headerOrientation="horizontal" class="calendar"></igx-calendar>
+    <igx-card class="card_1">
+      <igx-card-media height="120px" class="media-content_3">
+        <img src="/assets/SketchParser.png" class="image" />
+      </igx-card-media>
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          Title goes here...
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Subtitle goes here...
+        </h5>
+      </igx-card-header>
+      <igx-card-content class="body-content">
+        <p class="ig-typography__body-2 text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        </p>
+      </igx-card-content>
+      <igx-card-actions class="actions-content">
+        <ng-container igxStart>
+          <button igxButton="flat" igxRipple class="button_1">
+            Button
+          </button>
+        </ng-container>
+        <ng-container igxEnd>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              favorite
+            </igx-icon>
+          </button>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              bookmark
+            </igx-icon>
+          </button>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              share
+            </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+  </div>
+</div>
+<div class="row-layout group_16">
+  <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="line" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+  <igx-category-chart [dataSource]="financialBoxOfficeRevenue" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+  <igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+    <igx-column field="employeeID" dataType="number" header="employeeID" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="lastName" dataType="string" header="lastName" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="firstName" dataType="string" header="firstName" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="title" dataType="string" header="title" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="titleOfCourtesy" dataType="string" header="titleOfCourtesy" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="birthDate" dataType="date" header="birthDate" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="hireDate" dataType="date" header="hireDate" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.street" dataType="string" header="address street" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.city" dataType="string" header="address city" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.region" dataType="string" header="address region" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.postalCode" dataType="string" header="address postalCode" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.country" dataType="string" header="address country" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.phone" dataType="string" header="address phone" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="managerID" dataType="number" header="managerID" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="notes" dataType="string" header="notes" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="avatarUrl" dataType="string" header="avatarUrl" [sortable]="true" [selectable]="false"></igx-column>
+  </igx-grid>
+</div>
+<igx-snackbar actionText="Action" [igxToggleAction]="snackbar" #snackbar class="snackbar">
+  This is a message
+</igx-snackbar>
+<igx-dialog [closeOnOutsideSelect]="true" #dialog>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Are you sure you want to do this?</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">
+      Cancel
+    </button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">
+      OK
+    </button>
+  </igx-dialog-actions>
+</igx-dialog>
+<igx-banner #banner class="banner">
+  <p>
+    Banner message
+  </p>
+  <igx-banner-actions>
+    <button igxButton="flat" igxRipple class="button_1">
+      Button
+    </button>
+  </igx-banner-actions>
+  <igx-icon class="icon">
+    mail
+  </igx-icon>
+</igx-banner>

@@ -1,3 +1,119 @@
-<div class="outer-wrapper">
-  <router-outlet></router-outlet>
+<igx-navbar class="navbar">
+  <igx-navbar-action>
+    <button igxRipple igxIconButton="flat">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      All AB Components 2024
+    </h6>
+  </igx-navbar-title>
+  <button igxRipple igxIconButton="flat">
+    <igx-icon>
+      search
+    </igx-icon>
+  </button>
+  <button igxRipple igxIconButton="flat">
+    <igx-icon>
+      favorite
+    </igx-icon>
+  </button>
+  <button igxRipple igxIconButton="flat">
+    <igx-icon>
+      more_vert
+    </igx-icon>
+  </button>
+</igx-navbar>
+<div class="row-layout group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="240px" class="nav-drawer">
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple>
+        <span>Component Pages</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/all-components">
+        <igx-icon family="imx-icon" name="imx-development" class="icon"></igx-icon>
+        <span>All Components</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/radiogroup">
+        <igx-icon class="icon">
+          radio_button_checked
+        </igx-icon>
+        <span>Radio Group</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/stepper">
+        <igx-icon class="icon">
+          123
+        </igx-icon>
+        <span>Stepper</span>
+      </div>
+      <div igxDrawerItem igxRipple>
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="view-container">
+    <router-outlet></router-outlet>
+  </div>
+  <igx-nav-drawer [pin]="true" [pinThreshold]="1024" width="240px" class="nav-drawer">
+    <ng-template igxDrawerMini>
+      <div [isHeader]="true" igxDrawerItem igxRipple>
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/all-components">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/radiogroup">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/stepper">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+      </div>
+      <div igxDrawerItem igxRipple>
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+      </div>
+    </ng-template>
+    <ng-template igxDrawer>
+      <div [isHeader]="true" igxDrawerItem igxRipple>
+        <span>Component Pages</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/all-components">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+        <span>All Components</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/radiogroup">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+        <span>Radio Group</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/stepper">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+        <span>Stepper</span>
+      </div>
+      <div igxDrawerItem igxRipple>
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
 </div>
