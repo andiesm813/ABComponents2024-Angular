@@ -7,22 +7,195 @@
   align-content: flex-start;
   overflow: auto;
 }
-.navbar {
-  height: max-content;
-  min-width: min-content;
+.row-layout {
+  display: flex;
 }
-.nav-drawer {
-  min-width: min-content;
-  min-height: 0;
-  max-width: 200px;
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  overflow: auto;
+  position: relative;
+  padding: 20px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
   flex-shrink: 0;
-}
-.navbar-content {
-  gap: 1rem;
 }
 .column-layout {
   display: flex;
   flex-direction: column;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 400px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.tabs {
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.tab-item {
+  min-width: 100%;
+}
+.accordion {
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_3 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0.5rem;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.card {
+  height: max-content;
+  min-width: 320px;
+}
+.group_4 {
+  flex-grow: 1;
+}
+.group_5 {
+  width: 100%;
+}
+.group_6 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  overflow: auto;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_7 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 420px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_8 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_9 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_10 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  padding: 8px 0;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.group_11 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+}
+.group_12 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_13 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_14 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_15 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.card_1 {
+  width: 320px;
+  height: max-content;
+  min-width: 320px;
+  max-width: 320px;
+}
+.group_16 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
 }
 .tab-item-content {
   justify-content: flex-start;
@@ -44,9 +217,6 @@
   min-width: 100%;
   min-height: 100%;
   max-height: 100%;
-}
-.row-layout {
-  display: flex;
 }
 .stepper {
   min-width: 0;
@@ -120,18 +290,15 @@
   min-height: 120px;
   max-height: 120px;
 }
-.h6 {
-  margin: 0;
+.text {
+  height: max-content;
+  min-width: min-content;
 }
 .icon {
   --size: 24px;
   font-size: 24px;
   width: 24px;
   height: 24px;
-}
-.text {
-  height: max-content;
-  min-width: min-content;
 }
 .avatar {
   --igx-avatar-background: transparent;
@@ -163,197 +330,6 @@
   width: max-content;
   height: max-content;
   min-width: max-content;
-}
-.group {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.group_1 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 24px;
-  overflow: auto;
-  position: relative;
-  padding: 20px;
-  min-width: 50px;
-  min-height: 50px;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-.group_2 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 24px;
-  position: relative;
-  min-width: 400px;
-  min-height: 50px;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.tabs {
-  min-width: 0;
-  min-height: 0;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.tab-item {
-  min-width: 100%;
-}
-.accordion {
-  overflow-y: auto;
-  flex-shrink: 0;
-}
-.group_3 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 16px;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-}
-.group_4 {
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  gap: 0.5rem;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-}
-.card {
-  height: max-content;
-  min-width: 320px;
-}
-.group_5 {
-  flex-grow: 1;
-}
-.group_6 {
-  width: 100%;
-}
-.group_7 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 16px;
-  overflow: auto;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.group_8 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 16px;
-  position: relative;
-  min-width: 400px;
-  min-height: 50px;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.group_9 {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  gap: 16px;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-}
-.group_10 {
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  gap: 8px;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-}
-.group_11 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 16px;
-  position: relative;
-  padding: 8px 0;
-  min-width: 50px;
-  min-height: 50px;
-  flex-shrink: 0;
-}
-.group_12 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 8px;
-  position: relative;
-}
-.group_13 {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  gap: 8px;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-}
-.group_14 {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 8px;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-}
-.group_15 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 16px;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.group_16 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 24px;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-  flex-shrink: 0;
-}
-.card_1 {
-  width: 320px;
-  height: max-content;
-  min-width: 320px;
-  max-width: 320px;
-}
-.group_17 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 24px;
-  position: relative;
-  padding: 24px;
-  min-width: 50px;
-  min-height: 50px;
-  flex-shrink: 0;
 }
 .list {
   height: max-content;
