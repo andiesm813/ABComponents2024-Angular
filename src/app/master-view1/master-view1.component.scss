@@ -1,0 +1,15 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 20px;
+}
+.radio-group {
+  width: max-content;
+  height: max-content;
+}
+.radio {
+  padding: 8px;
+}
