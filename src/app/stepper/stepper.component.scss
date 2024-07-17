@@ -28,13 +28,17 @@
   min-height: 100%;
   max-height: 100%;
 }
-.input {
+.user-input {
   height: max-content;
   min-width: min-content;
 }
 .button {
   height: max-content;
   flex-shrink: 0;
+}
+.date-picker {
+  height: max-content;
+  min-width: 120px;
 }
 .row-layout {
   display: flex;

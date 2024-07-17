@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IGX_DATE_PICKER_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_SELECT_DIRECTIVES, IGX_SIMPLE_COMBO_DIRECTIVES, IgxDateTimeEditorModule, IgxIconComponent } from '@infragistics/igniteui-angular';
+import { IGX_DATE_PICKER_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_SELECT_DIRECTIVES, IGX_SIMPLE_COMBO_DIRECTIVES, IgxDateTimeEditorModule, IgxIconComponent, IgxInputGroupModule } from '@infragistics/igniteui-angular';
 import { Subject, takeUntil } from 'rxjs';
 import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
 import { FinancialService } from '../services/financial.service';
@@ -8,7 +8,7 @@ import { FinancialService } from '../services/financial.service';
 @Component({
   selector: 'app-forms',
   standalone: true,
-  imports: [IGX_SIMPLE_COMBO_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_DATE_PICKER_DIRECTIVES, IGX_SELECT_DIRECTIVES, IgxDateTimeEditorModule, IgxIconComponent, FormsModule, FormsModule],
+  imports: [IGX_SIMPLE_COMBO_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_DATE_PICKER_DIRECTIVES, IGX_SELECT_DIRECTIVES, IgxDateTimeEditorModule, IgxInputGroupModule, IgxIconComponent, FormsModule, FormsModule],
   templateUrl: './forms.component.html',
   styleUrls: ['./forms.component.scss']
 })

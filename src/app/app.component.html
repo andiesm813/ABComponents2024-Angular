@@ -28,7 +28,7 @@
   </button>
 </igx-navbar>
 <div class="row-layout group">
-  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="240px" class="nav-drawer">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" width="240px" class="nav-drawer">
     <ng-template igxDrawer>
       <div [isHeader]="true" igxDrawerItem igxRipple>
         <span>Component Pages</span>
@@ -65,7 +65,7 @@
   <div class="view-container">
     <router-outlet></router-outlet>
   </div>
-  <igx-nav-drawer [pin]="true" [pinThreshold]="1024" width="240px" class="nav-drawer">
+  <igx-nav-drawer [pin]="true" width="240px" class="nav-drawer">
     <ng-template igxDrawerMini>
       <div [isHeader]="true" igxDrawerItem igxRipple>
         <igx-icon class="icon">
