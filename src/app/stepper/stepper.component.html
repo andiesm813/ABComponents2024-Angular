@@ -1,11 +1,11 @@
 <igx-stepper titlePosition="bottom" verticalAnimationType="none" horizontalAnimationType="none" #stepper2 class="stepper">
   <igx-step [isValid]="false">
     <div igxStepContent class="column-layout step-content">
-      <igx-input-group type="border" class="input">
+      <igx-input-group type="border" class="user-input">
         <input type="text" placeholder="This is the placeholder" igxInput />
         <label igxLabel>Label</label>
       </igx-input-group>
-      <igx-input-group type="border" class="input">
+      <igx-input-group type="border" class="user-input">
         <input type="text" placeholder="This is the placeholder" igxInput />
         <label igxLabel>Label</label>
       </igx-input-group>
@@ -54,11 +54,14 @@
 <igx-stepper orientation="vertical" titlePosition="bottom" verticalAnimationType="none" horizontalAnimationType="none" #stepper3 class="stepper">
   <igx-step [isValid]="false">
     <div igxStepContent class="column-layout step-content">
-      <igx-input-group type="border" class="input">
+      <igx-date-picker type="border" mode="dialog" class="date-picker">
+        <label igxLabel>Date</label>
+      </igx-date-picker>
+      <igx-input-group type="border" class="user-input">
         <input type="text" placeholder="This is the placeholder" igxInput />
         <label igxLabel>Label</label>
       </igx-input-group>
-      <igx-input-group type="border" class="input">
+      <igx-input-group type="border" class="user-input">
         <input type="text" placeholder="This is the placeholder" igxInput />
         <label igxLabel>Label</label>
       </igx-input-group>
@@ -96,6 +99,62 @@
           Prev
         </button>
         <button igxButton="contained" igxRipple (click)="stepper3.reset()" class="button">
+          Reset
+        </button>
+      </div>
+    </div>
+    <p igxStepTitle>Wrap</p>
+    <p igxStepSubTitle>(Optional)</p>
+  </igx-step>
+</igx-stepper>
+<igx-stepper orientation="vertical" titlePosition="bottom" verticalAnimationType="none" horizontalAnimationType="none" #stepper4 class="stepper">
+  <igx-step [isValid]="false">
+    <div igxStepContent class="column-layout step-content">
+      <igx-simple-combo type="border" [data]="financialBoxOfficeRevenue" placeholder="Placeholder" displayKey="Franchise" class="user-input">
+        <label igxLabel>Label/Placeholder</label>
+      </igx-simple-combo>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" placeholder="This is the placeholder" igxInput />
+        <label igxLabel>Label</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" placeholder="This is the placeholder" igxInput />
+        <label igxLabel>Label</label>
+      </igx-input-group>
+      <div class="row-layout group">
+        <button igxButton="contained" igxRipple (click)="stepper4.next()" class="button">
+          Next
+        </button>
+      </div>
+    </div>
+    <p igxStepTitle>Address</p>
+  </igx-step>
+  <igx-step [isValid]="false">
+    <div igxStepContent class="column-layout step-content">
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+      </p>
+      <div class="row-layout group">
+        <button igxButton="contained" igxRipple (click)="stepper4.prev()" class="button">
+          Prev
+        </button>
+        <button igxButton="contained" igxRipple (click)="stepper4.next()" class="button">
+          Next
+        </button>
+      </div>
+    </div>
+    <p igxStepTitle>Item</p>
+  </igx-step>
+  <igx-step [optional]="true">
+    <div igxStepContent class="column-layout step-content">
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta nulla asperiores, officia ullam recusandae voluptatem omnis perferendis vitae non magni magnam praesentium placeat nemo quas repudiandae. Nisi, quo ex!
+      </p>
+      <div class="row-layout group">
+        <button igxButton="contained" igxRipple (click)="stepper4.prev()" class="button">
+          Prev
+        </button>
+        <button igxButton="contained" igxRipple (click)="stepper4.reset()" class="button">
           Reset
         </button>
       </div>
