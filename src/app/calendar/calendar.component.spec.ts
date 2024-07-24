@@ -3,22 +3,22 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { IGX_CALENDAR_DIRECTIVES } from '@infragistics/igniteui-angular';
-import { ChildViewComponent } from './child-view.component';
+import { CalendarComponent } from './calendar.component';
 
-describe('ChildViewComponent', () => {
-  let component: ChildViewComponent;
-  let fixture: ComponentFixture<ChildViewComponent>;
+describe('CalendarComponent', () => {
+  let component: CalendarComponent;
+  let fixture: ComponentFixture<CalendarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChildViewComponent ],
+      declarations: [ CalendarComponent ],
       imports: [ NoopAnimationsModule, FormsModule, IGX_CALENDAR_DIRECTIVES ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChildViewComponent);
+    fixture = TestBed.createComponent(CalendarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

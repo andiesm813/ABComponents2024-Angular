@@ -1,0 +1,14 @@
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <p class="ig-typography__subtitle-2 text">
+      No selected date
+    </p>
+    <igx-calendar [hasHeader]="true" headerOrientation="horizontal" class="calendar"></igx-calendar>
+  </div>
+  <div class="column-layout group_1">
+    <p class="ig-typography__subtitle-2 text">
+      With selected date
+    </p>
+    <igx-calendar [hasHeader]="true" headerOrientation="horizontal" [(ngModel)]="value" class="calendar"></igx-calendar>
+  </div>
+</div>
