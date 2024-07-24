@@ -2,6 +2,16 @@
   <div class="row-layout group_1">
     <div class="column-layout group_2">
       <div class="row-layout group_3">
+        <igx-avatar size="large" shape="circle" class="avatar"></igx-avatar>
+        <igx-avatar shape="rounded" size="medium" class="avatar"></igx-avatar>
+        <igx-avatar class="avatar"></igx-avatar>
+      </div>
+      <p class="ig-typography__subtitle-2 text">
+        No image
+      </p>
+    </div>
+    <div class="column-layout group_2">
+      <div class="row-layout group_3">
         <igx-avatar src="/assets/a7f211be67afc061d9571f5b5b5236cd92420e0c.png" size="large" shape="circle" class="avatar"></igx-avatar>
         <igx-avatar src="/assets/7e86e8b8b495deb8eefcdd3556151a40532211e1.png" shape="rounded" size="medium" class="avatar"></igx-avatar>
         <igx-avatar src="/assets/d4c387693b4db8c8354a14897762a46dcf820844.png" class="avatar"></igx-avatar>
@@ -94,15 +104,9 @@
   </div>
   <div class="row-layout group_4">
     <igx-card class="card">
-      <igx-card-media height="200px" class="media-content">
-        <img src="/assets/start-building-dark.svg" class="image" />
-      </igx-card-media>
       <igx-card-header>
-        <div igxCardThumbnail>
-          <igx-avatar src="/assets/Avatar13.png" size="large" shape="circle" class="avatar"></igx-avatar>
-        </div>
         <h3 igxCardHeaderTitle>
-          Images from Assets
+          No image
         </h3>
         <h5 igxCardHeaderSubtitle>
           Subtitle goes here...
@@ -129,6 +133,40 @@
             <igx-icon>
               share
             </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+    <igx-card class="card">
+      <igx-card-media height="200px" class="media-content">
+        <img src="/assets/start-building-dark.svg" class="image" />
+      </igx-card-media>
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar src="/assets/Avatar13.png" size="large" shape="circle" class="avatar"></igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Images from Assets
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Subtitle goes here...
+        </h5>
+      </igx-card-header>
+      <igx-card-actions class="actions-content">
+        <ng-container igxStart>
+          <button igxButton="flat" igxRipple class="button">
+            Button
+          </button>
+        </ng-container>
+        <ng-container igxEnd>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon family="imx-icon" name="imx-cement-mixer"></igx-icon>
+          </button>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon family="imx-icon" name="imx-bulldozer"></igx-icon>
+          </button>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon family="imx-icon" name="imx-brick-wall"></igx-icon>
           </button>
         </ng-container>
       </igx-card-actions>
@@ -176,6 +214,10 @@
   </div>
 </div>
 <div class="column-layout group">
+  <p class="ig-typography__subtitle-2 text">
+    No image
+  </p>
+  <img class="image_1" />
   <p class="ig-typography__subtitle-2 text">
     Image from Assets
   </p>
