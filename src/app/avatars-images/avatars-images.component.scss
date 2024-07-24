@@ -1,9 +1,11 @@
 :host {
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
-  align-content: flex-start;
+  align-content: stretch;
+  gap: 40px;
 }
 .column-layout {
   display: flex;
@@ -15,6 +17,7 @@
   align-content: flex-start;
   gap: 24px;
   position: relative;
+  padding: 24px;
   flex-grow: 1;
   flex-basis: 0;
 }
