@@ -5,6 +5,7 @@ import { AllComponentsComponent } from './all-components/all-components.componen
 import { AvatarsImagesComponent } from './avatars-images/avatars-images.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { FormsComponent } from './forms/forms.component';
+import { ListsComponent } from './lists/lists.component';
 import { RadiogroupComponent } from './radiogroup/radiogroup.component';
 import { StepperComponent } from './stepper/stepper.component';
 
@@ -15,6 +16,7 @@ export const routes: Routes = [
   { path: 'avatars-images', component: AvatarsImagesComponent, data: { text: 'Avatars-Images' } },
   { path: 'calendar', component: CalendarComponent, data: { text: 'Calendar' } },
   { path: 'forms', component: FormsComponent, data: { text: 'Forms' } },
+  { path: 'lists', component: ListsComponent, data: { text: 'Lists' } },
   { path: 'radiogroup', component: RadiogroupComponent, data: { text: 'Radiogroup' } },
   { path: 'stepper', component: StepperComponent, data: { text: 'Stepper' } },
   { path: '**', component: PageNotFoundComponent } // must always be last

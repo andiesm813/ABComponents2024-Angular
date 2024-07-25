@@ -13,7 +13,7 @@
 .group {
   justify-content: flex-start;
   align-items: stretch;
-  align-content: flex-start;
+  align-content: stretch;
   gap: 24px;
   overflow: auto;
   position: relative;
@@ -33,7 +33,7 @@
   align-content: flex-start;
   gap: 24px;
   position: relative;
-  min-width: 400px;
+  min-width: 320px;
   min-height: 50px;
   flex-grow: 1;
   flex-basis: 0;
@@ -86,7 +86,7 @@
   gap: 16px;
   overflow: auto;
   position: relative;
-  min-width: 50px;
+  min-width: 320px;
   min-height: 50px;
   flex-grow: 1;
   flex-basis: 0;
@@ -165,7 +165,7 @@
   align-content: flex-start;
   gap: 16px;
   position: relative;
-  min-width: 50px;
+  min-width: 240px;
   min-height: 50px;
   flex-grow: 1;
   flex-basis: 0;

@@ -4,8 +4,8 @@ import { IgcFormsModule, IGX_ACCORDION_DIRECTIVES, IGX_BANNER_DIRECTIVES, IGX_BU
 import { IgxCategoryChartModule } from 'igniteui-angular-charts';
 import { defineComponents, IgcRatingComponent } from 'igniteui-webcomponents';
 import { Subject, takeUntil } from 'rxjs';
-import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
 import { EmployeesType } from '../models/northwind/employees-type';
+import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
 import { FinancialService } from '../services/financial.service';
 import { NorthwindService } from '../services/northwind.service';
 
