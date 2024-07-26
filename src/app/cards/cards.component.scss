@@ -23,8 +23,10 @@
   flex-basis: 0;
 }
 .card {
+  width: 400px;
   height: max-content;
   min-width: 320px;
+  max-width: 400px;
 }
 .group_1 {
   flex-grow: 1;
