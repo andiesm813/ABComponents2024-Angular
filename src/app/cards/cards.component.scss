@@ -1,0 +1,76 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.card {
+  height: max-content;
+  min-width: 320px;
+}
+.group_1 {
+  flex-grow: 1;
+}
+.group_2 {
+  width: 100%;
+}
+.row-layout {
+  display: flex;
+}
+.media-content {
+  min-height: 120px;
+  max-height: 120px;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.media-content_1 {
+  min-width: 120px;
+  max-width: 120px;
+}
+.media-content_2 {
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+}
+.actions-content_1 {
+  align-items: end;
+  min-width: 50px;
+  min-height: 40px;
+}
+.image {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+}
+.button {
+  height: max-content;
+}
